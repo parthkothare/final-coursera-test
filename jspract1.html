@@ -2,13 +2,38 @@
 <head>
 <script type = "text/javascript">
 // Functions are First-Class Data Types
+
 // Functions ARE objects
+
 function multiply(x, y) {
+
   return x * y;
+
 }
-console.log(multiply(2,3));
 
+multiply.version = "v.1.0.0";
+console.log(multiply.version);
 
+// Function factory
+
+function makeadd(add) {
+
+  var myFunc = function (x) {
+    return add + x;
+
+  };
+
+  return myFunc;
+
+}
+
+var addwith3 = makeadd(3);
+
+console.log(multiplyBy3(10));
+
+var doubleAll = makeadd(2);
+
+console.log(doubleAll(100));
 
 </script>
 </head>
