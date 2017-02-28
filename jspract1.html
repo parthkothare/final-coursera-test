@@ -1,63 +1,16 @@
 <html>
 <head>
 <script type = "text/javascript">
-var company = new Object();
- var n="A021"
- console.log(n);
-
-company.name = "DC COMICS";
-
-company.ceo = new Object();
-
-company.ceo.firstName = "BATMAN";
-
-company.ceo.favColor = "BLACK";
+// Functions are First-Class Data Types
+// Functions ARE objects
+function multiply(x, y) {
+  return x * y;
+}
+multiply.version = "v.1.0.0";
+console.log(multiply.version);
 
 
 
-console.log(company);
-
-console.log("Company CEO name is: " 
-
-  + company.ceo.firstName);
-
-
-
-console.log(company["name"]);
-
-var stockPropName = "stock of company";
-
-company[stockPropName] = 100;
-
-
-
-console.log("Stock price is: " + 
-
-  company[stockPropName]);
-
-
-
-// Better way: object literal
-
-var DC = {
-
-  name: "DC",
-
-  ceo: {
-
-    firstName: "BATMAN",
-
-    favColor: "BLACK"
-
-  },
-
-  "stock of company": 100
-
-};
-
-
-
-console.log(DC.ceo.firstName);
 </script>
 </head>
 </html>
