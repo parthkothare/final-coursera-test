@@ -9,12 +9,16 @@ array[7] = {numbers: 1,2,3,4,,6,8,9,7};
 
 console.log(array);
 var y=5
-function arr(array, y) {
-  
+function sorting(x) {
+  for (var i = 0; i <8; i++) {
+    if (array[i] > array[i + 1]) {
+                       var tmp = array[i];
+                        array[i] = array[i + 1];
+                        array[i + 1] = var tmp;
 }
-
-
-
+}
+console.log(sorting(array));
+  
 </script>
 </head>
 </html>
