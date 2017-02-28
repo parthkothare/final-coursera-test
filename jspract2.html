@@ -2,11 +2,27 @@
 <head>
 
 <script>
-var sizes = [4, 1, 10, 8];
-sizes.sort(function(a,b) { return a>b });
-  
+var a=[1,5,6,7,8]
+function sort(a)
+  {
+     for(var i=0;i<5;i++)
+     {
+       for(var j=i;j<5;j++)
+       {
+          if(a[i]>a[j])
+          {
+             var temp=a[i];
+            a[i]=a[j];
+            a[j]=temp;
+          }
+        }
+     }
+for(var t=0;t<5;t++)
+{
+console.log(a);
 }
-</script>
+    sorting(a);
+  </script>
 
 </head>
 </html>
