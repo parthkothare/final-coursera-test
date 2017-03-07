@@ -6,7 +6,7 @@ function sayHello () {
   var name =
    document.getElementById("name").value;
    var message = "<h2>Hello " + name + "!</h2>";
-   var counter=0;
+   
   // document
   //   .getElementById("content")
   //   .textContent = message;
@@ -14,7 +14,7 @@ function sayHello () {
   document
     .getElementById("content")
     .innerHTML = message;
-while(counter<=1){
+
   if (name === "student") {
       var  title = 
       document
@@ -24,7 +24,8 @@ while(counter<=1){
     document
         .querySelector("h1")
         .textContent = title;
-     counter=counter+1;
+    {break;}
+     
   }
 }
-}
+
