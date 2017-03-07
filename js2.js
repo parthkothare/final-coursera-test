@@ -13,7 +13,7 @@ function sayHello () {
   document
     .getElementById("content")
     .innerHTML = message;
-while(counter<=1){
+while(counter<2){
   if (name === "student") {
       var  title = 
       document
