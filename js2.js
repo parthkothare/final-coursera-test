@@ -20,7 +20,7 @@ function sayHello () {
       document
         .querySelector("#title")
         .textContent;
-    title += " & Lovin' it!";
+    title = " & Lovin' it!";
     document
         .querySelector("h1")
         .textContent = title;
