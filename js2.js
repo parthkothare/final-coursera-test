@@ -1,7 +1,6 @@
 // DOM manipulation
 // console.log(document.getElementById("title"));
 // console.log(document instanceof HTMLDocument);
-var counter=0;
 function sayHello () {
   var name =
    document.getElementById("name").value;
