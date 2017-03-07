@@ -14,9 +14,9 @@ function sayHello () {
   document
     .getElementById("content")
     .innerHTML = message;
-while(var title<=1){
+while(counter<=1){
   if (name === "student") {
-      title = 
+      var  title = 
       document
         .querySelector("#title")
         .textContent;
@@ -24,6 +24,8 @@ while(var title<=1){
     document
         .querySelector("h1")
         .textContent = title;
+    var counter=0;
+     counter=counter+1;
   }
 }
 }
