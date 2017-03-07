@@ -1,7 +1,8 @@
 // DOM manipulation
 // console.log(document.getElementById("title"));
 // console.log(document instanceof HTMLDocument);
-function sayHello () {
+{var counter=0;
+  function sayHello () {
   var name =
    document.getElementById("name").value;
    var message = "<h2>Hello " + name + "!</h2>";
@@ -25,5 +26,6 @@ while(counter<2){
         .textContent = title;
     counter=counter+1;
   }
+}
 }
 }
