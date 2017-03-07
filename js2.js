@@ -1,7 +1,7 @@
 // DOM manipulation
 // console.log(document.getElementById("title"));
 // console.log(document instanceof HTMLDocument);
-
+var counter=0;
 function sayHello () {
   var name =
    document.getElementById("name").value;
@@ -14,7 +14,7 @@ function sayHello () {
   document
     .getElementById("content")
     .innerHTML = message;
-
+while(counter<=1){
   if (name === "student") {
       var  title = 
       document
@@ -24,6 +24,7 @@ function sayHello () {
     document
         .querySelector("h1")
         .textContent = title;
+    counter=counter+1;
   }
 }
-
+}
