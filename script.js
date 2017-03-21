@@ -2,6 +2,10 @@
 document.addEventListener("DOMContentLoaded",
   function (event) {
     
+    // Event handling
+document.addEventListener("DOMContentLoaded",
+  function (event) {
+    
     function sayHello (event) {
       this.textContent = "Said it!";
       var name =
@@ -27,6 +31,17 @@ document.addEventListener("DOMContentLoaded",
     // Unobtrusive event binding
     document.querySelector("button")
       .addEventListener("click", sayHello);
+
+  }
+);
+
+
+
+// document.querySelector("button")
+//   .onclick = sayHello;
+
+
+
 
   }
 );
