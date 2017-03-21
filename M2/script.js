@@ -10,17 +10,11 @@ document.addEventListener("DOMContentLoaded",
         $ajaxUtils
           .sendGetRequest("data/name.json", 
             function (res) {
-              var message = 
-                res.firstName + " " + res.lastName
-              if (res.likesChineseFood) {
-                message += " likes Chinese food";
-              }
-              else {
-                message += " doesn't like Chinese food";
-              }
-              message += " and uses ";
-              message += res.numberOfDisplays + 1;
-              message += " displays for coding.";
+              var message1 = 
+                res.firstName1 + " " + res.OS " " + res.Maths
+          var message2 = 
+                res.firstName2 + " " + res.OS1 " " + res.Maths1
+          
 
               document.querySelector("#content")
                 .innerHTML = "<h2>" + message + "</h2>";
